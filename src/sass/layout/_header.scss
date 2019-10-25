@@ -204,7 +204,7 @@
 		}
 
 		#header {
-			height: 3em;
+			height: 6em;
 			line-height: 2.95em;
 
 			h1 {
@@ -222,7 +222,7 @@
 
 	@include breakpoint('<=small') {
 		#header {
-			height: 3em !important;
+			height: 6.8em !important;
 			line-height: 2.95em !important;
 
 			h1 {
