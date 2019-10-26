@@ -18,7 +18,7 @@ export default class Elements extends React.Component {
                         </header>
                         <section>
                             <h4>Form</h4>
-                            <form name="contact" data-netlify="true">
+                            <form name="contact" data-netlify="true" action="/">
                                 <div className="row gtr-uniform gtr-50">
                                     <div className="col-6 col-12-xsmall">
                                         <input type="text" name="name" id="demo-name"  placeholder="Name" />
