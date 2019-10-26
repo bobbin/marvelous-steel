@@ -18,13 +18,13 @@ export default class Elements extends React.Component {
                         </header>
                         <section>
                             <h4>Form</h4>
-                            <form method="POST" name="contact" data-netlify="true">
+                            <form name="contact" data-netlify="true">
                                 <div className="row gtr-uniform gtr-50">
                                     <div className="col-6 col-12-xsmall">
-                                        <input type="text" name="name" id="demo-name" value="" placeholder="Name" />
+                                        <input type="text" name="name" id="demo-name"  placeholder="Name" />
                                     </div>
                                     <div className="col-6 col-12-xsmall">
-                                        <input type="email" name="email" id="demo-email" value="" placeholder="Email" />
+                                        <input type="email" name="email" id="demo-email" placeholder="Email" />
                                     </div>
                                     <div className="col-12">
                                         <select name="demo-category" id="demo-category">
@@ -60,7 +60,7 @@ export default class Elements extends React.Component {
                                     </div>
                                     <div className="col-12">
                                         <ul className="actions">
-                                            <li><input type="submit" value="Send Message" className="primary" /></li>
+                                            <li><button type="submit">Send</button></li>
                                             <li><input type="reset" value="Reset" /></li>
                                         </ul>
                                     </div>
