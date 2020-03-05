@@ -8,6 +8,9 @@ menus:
   footer:
     title: Contact
     weight: 3
+  main:
+    title: Contact
+    weight: 5
 sidebar:
   enabled: false
   side: left

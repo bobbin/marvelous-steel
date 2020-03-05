@@ -2,22 +2,22 @@ about:
   actions:
     - is_primary: false
       is_scrolly: false
-      label: Learn More
-      url: /no-sidebar
+      label: Contact
+      url: /contact
   enabled: true
   text: >-
     Lorem ipsum dolor sit amet interdum mollis sapien. Sed amet ac lorem ipsum
     interdum tempus sagittis lorem tempus.
-  title: Información de Contacto
+  title: Contact Information
 contact_methods:
   enabled: true
   methods_col1:
     - icon: fa-map-marker
       text: |-
-        Untitled Corp  
-        1234 Fictional Road  
-        Suite 5432  
-        Nashville, TN 00000
+        Apptiva Core Technologies
+        Paseo de la Castellana, 141
+        Edificio Cuzco IV
+        28046 Madrid
       title: Address
       type: contact_with_text
   methods_col2:
@@ -26,10 +26,10 @@ contact_methods:
       title: Phone
       type: contact_with_text
     - icon: fa-envelope-o
-      text: information@untitled.tld
+      text: info@apptivatech.com
       title: Email
       type: contact_with_link
       url: '#'
 copyright:
   enabled: true
-  text: '&copy; Untitled. All rights reserved.'
+  text: '&copy; Apptiva Core Technologies 2020. All Rigths Reserved'
