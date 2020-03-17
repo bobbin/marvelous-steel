@@ -9,8 +9,7 @@ menus:
     title: Contact
     weight: 3
   main:
-    title: Contact
-    weight: 5
+    title: Contacto2
 sidebar:
   enabled: false
   side: left
