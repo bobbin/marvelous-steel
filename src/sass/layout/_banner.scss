@@ -6,98 +6,146 @@
 
 /* Banner */
 
-	#banner {
-		@include banner-bg('../../images/banner.jpg');
-		position: relative;
-		min-height: 70vh;
-		height: 35em;
 
-		.content {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			@include color-typography(accent4);
-			@include color-button(accent4);
-			@include color-section(accent4);
-			@include padding(6.5em, 0);
-			width: 100%;
 
-			> .inner {
-				@include vendor('display', 'flex');
-				@include vendor('align-items', 'center');
-				margin: 0 auto;
-				width: _size(inner-width, default);
+#banner {
 
-				header {
-					width: 75%;
+	background-image: url(../../images/banner.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: inherit;
+    background-repeat: no-repeat;
+    min-height: 105vh;
+    height: 67em;
+    background-position: top;
+
+
+
+
+	.content {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		@include color-typography(accent4);
+		@include color-button(accent4);
+		@include color-section(accent4);
+		@include padding(6.5em, 0);
+		width: 50%;
+		background-color: transparent;
+
+		>.inner {
+			@include vendor('display', 'flex');
+			@include vendor('align-items', 'center');
+			margin: 0 auto;
+			width: 666px;
+			flex-direction: column;
+
+			header {
+				width: 75%;
+				h2{
+					font-size: 75px;
+					text-transform: inherit;
+					font-family: Overpass;
+					font-size: 75px;
+					font-weight: 800;
+					font-stretch: normal;
+					font-style: normal;
+					line-height: 1.01;
+					letter-spacing: normal;
 				}
-
-				.actions {
-					padding-left: (_size(element-margin) * 1.5);
-					text-align: right;
-				}
-			}
-		}
-
-		body.is-mobile & {
-			background-attachment: scroll;
-		}
-
-		@include breakpoint('<=large') {
-			min-height: 0;
-
-			.content {
-				@include padding(4em, 3em);
-
-				> .inner {
-					width: _size(inner-width, large);
-				}
-			}
-		}
-
-		@include breakpoint('<=medium') {
-			@include orientation(landscape) {
-				height: 30em;
 			}
 
-			@include orientation(portrait) {
-				height: 50em;
-			}
+			.actions {
+				padding-left: 0px;
+				text-align: right;
 
-			.content {
-				> .inner {
-					@include vendor('flex-direction', 'column');
+				.button {
+					width: 252px;
+					height: 35px;
+					border-radius: 17.5px;
+					background-color: #f04985;
+					text-transform: inherit;
+					padding: 0;
+					font-size: 14px;
+					line-height: 2.4em;
+					border: none;
+					box-shadow: none;
+					padding-left:11px;
 
-					header {
-						width: 100%;
+					&::after {
+						content: '\f054';
+						margin-right: 0.75em;
+						-webkit-font-smoothing: antialiased;
+						font-family: FontAwesome;
+						font-style: normal;
+						font-weight: normal;
+						text-transform: none !important;
+						margin-left: 10px;
 					}
-
-					.actions {
-						width: 100%;
-						padding-left: 0;
-						text-align: left;
-					}
 				}
-			}
-		}
-
-		@include breakpoint('<=small') {
-			@include orientation(landscape) {
-				height: 25em;
-			}
-
-			@include orientation(portrait) {
-				height: 30em;
-			}
-
-			.content {
-				@include padding(2.5em, 2em);
-			}
-		}
-
-		@include breakpoint('<=xsmall') {
-			.content {
-				@include padding(2.5em, 1.5em);
 			}
 		}
 	}
+
+	body.is-mobile & {
+		background-attachment: scroll;
+	}
+
+	@include breakpoint('<=large') {
+		min-height: 0;
+
+		.content {
+			@include padding(4em, 3em);
+
+			>.inner {
+				width: _size(inner-width, large);
+			}
+		}
+	}
+
+	@include breakpoint('<=medium') {
+		@include orientation(landscape) {
+			height: 30em;
+		}
+
+		@include orientation(portrait) {
+			height: 50em;
+		}
+
+		.content {
+			>.inner {
+				@include vendor('flex-direction', 'column');
+
+				header {
+					width: 100%;
+				}
+
+				.actions {
+					width: 100%;
+					padding-left: 0;
+					text-align: left;
+				}
+			}
+		}
+	}
+
+	@include breakpoint('<=small') {
+		@include orientation(landscape) {
+			height: 25em;
+		}
+
+		@include orientation(portrait) {
+			height: 30em;
+		}
+
+		.content {
+			@include padding(2.5em, 2em);
+		}
+	}
+
+	@include breakpoint('<=xsmall') {
+		.content {
+			@include padding(2.5em, 1.5em);
+		}
+	}
+}

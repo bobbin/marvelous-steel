@@ -4,10 +4,9 @@ banner:
     - is_huge: true
       is_primary: false
       is_scrolly: false
-      label: More Information
+      label: Conoce nuestras soluciones
       url: /no-sidebar
-  subtitle: High-End Software and Architecture Solutions bar
-  title: Apptiva Technologies 2
+  title: Donde surge  una necesidad Apptiva proporciona soluciones
 menus:
   layouts: {}
   main:
@@ -106,5 +105,5 @@ sections:
     title: Convallis amet interdum
     type: posts
 template: home
-title: Apptiva Technologies 2
+title: Apptiva Technologies
 ---

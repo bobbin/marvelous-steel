@@ -20,8 +20,7 @@
 	}
 
 	#header {
-		background: _palette(accent4, bg-alt);
-		color: _palette(accent4, fg-bold);
+		background: white;
 		height: 5.2em;
 		left: 0;
 		line-height: 5em;
@@ -31,8 +30,12 @@
 		z-index: _misc(z-index-base);
 
 		a {
-			color: inherit;
+			color: rgba(0, 0, 0, 0.85);
 			text-decoration: none;
+			img{
+				width: 233px;
+				height: 74px;
+			}
 		}
 
 		h1 {
@@ -86,8 +89,8 @@
 					a {
 						font-weight: _font(weight-bold);
 						letter-spacing: 0.05em;
-						text-transform: uppercase;
-						font-size: 0.9em;
+						text-transform: capitalize;
+						font-size: 20px;
 
 						&.submenu {
 							@include icon;
@@ -137,10 +140,11 @@
 
 		&.alt {
 			@include vendor('animation', 'none');
-			background: transparent;
-			height: 5em;
+			background: white;
+			height: 111px;
 			line-height: 5em;
 			position: absolute;
+			padding-top: 23px;
 
 			h1 {
 				margin-left: 2.5em;
@@ -148,6 +152,7 @@
 
 			nav {
 				margin-right: 2.5em;
+				margin-top: 15px;
 			}
 		}
 	}

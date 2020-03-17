@@ -9,14 +9,14 @@ menus:
     title: Contact
     weight: 3
   main:
-    title: Contact
+    title: Contacto2
     weight: 5
 sidebar:
   enabled: false
   side: left
 subtitle: Sed magna in pharetra ultricies dolor sit amet consequat adipiscing lorem.
 template: page
-title: Contact
+title: Contacto2
 ---
 
 ### Dolore Amet Consequat
