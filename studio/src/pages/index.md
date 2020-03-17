@@ -6,8 +6,8 @@ banner:
       is_scrolly: false
       label: More Information
       url: /no-sidebar
-  subtitle: High-End Software and Architecture Solutions bar
-  title: Apptiva Technologies 2
+  subtitle: High-End Software and Architecture Solutions
+  title: Apptiva Technologies
 menus:
   layouts: {}
   main:

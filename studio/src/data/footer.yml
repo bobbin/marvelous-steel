@@ -1,0 +1,35 @@
+about:
+  actions:
+    - is_primary: false
+      is_scrolly: false
+      label: Contact
+      url: /contact
+  enabled: true
+  text: >-
+    Lorem ipsum dolor sit amet interdum mollis sapien. Sed amet ac lorem ipsum
+    interdum tempus sagittis lorem tempus.
+  title: Contact Information
+contact_methods:
+  enabled: true
+  methods_col1:
+    - icon: fa-map-marker
+      text: |-
+        Apptiva Core Technologies
+        Paseo de la Castellana, 141
+        Edificio Cuzco IV
+        28046 Madrid
+      title: Address
+      type: contact_with_text
+  methods_col2:
+    - icon: fa-phone
+      text: (000) 000-0000
+      title: Phone
+      type: contact_with_text
+    - icon: fa-envelope-o
+      text: info@apptivatech.com
+      title: Email
+      type: contact_with_link
+      url: '#'
+copyright:
+  enabled: true
+  text: '&copy; Apptiva Core Technologies 2020. All Rigths Reserved'
