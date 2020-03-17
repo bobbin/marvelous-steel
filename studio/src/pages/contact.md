@@ -7,15 +7,15 @@ content_img:
 menus:
   footer:
     title: Contact
-    weight: 3
+    weight: 2
   main:
-    title: Contacto2
+    title: Contacto
 sidebar:
   enabled: false
   side: left
 subtitle: Sed magna in pharetra ultricies dolor sit amet consequat adipiscing lorem.
 template: page
-title: Contacto2
+title: Servicios
 ---
 
 ### Dolore Amet Consequat
