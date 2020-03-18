@@ -1,5 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
+import Services from '../components/Services/Services';
 
 import components, {Layout} from '../components/index';
 import Banner from '../components/Banner';
@@ -15,6 +16,7 @@ export default class Home extends React.Component {
                             <GetSectionComponent key={section_idx} {...this.props} section={section} page={this.props.pageContext} site={this.props.pageContext.site} />
                         )
                     })}
+                    <Services></Services>
             </Layout>
         );
     }
