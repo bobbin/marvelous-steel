@@ -13,7 +13,7 @@
 		// @include vendor('flex-wrap', 'wrap');
 		// margin: 0 0 _size(element-margin) 0;
 
-		
+
 
 		.post {
 			@include vendor('display', 'flex');
@@ -22,7 +22,7 @@
 				display: block;
 				margin-right: _size(element-margin);
 				width: 40%;
-				-ms-flex: auto;
+				// -ms-flex: auto;
 
 				img {
 					// display: block;
@@ -35,7 +35,7 @@
 
 			.content {
 				width: 60%;
-				-ms-flex: auto;
+				// -ms-flex: auto;
 
 				> :last-child {
 					margin-bottom: 0;
