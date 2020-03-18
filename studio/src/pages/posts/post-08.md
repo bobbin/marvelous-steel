@@ -1,6 +1,6 @@
 ---
 alt_img: >-
-  https://cdn.sanity.io/images/atpud83s/production/23d00d5e62e7bda0de556bdc621aeca958ba2be7-400x410.jpg
+  https://cdn.sanity.io/images/atpud83s/production/c4f3da3ce04eeca60dde9818bab0641f66e78a8c-428x284.jpg
 content_img:
   enabled: true
   path: >-
@@ -8,8 +8,11 @@ content_img:
   url: '#'
 date: '2017-04-08'
 excerpt: >-
-  Lorem ipsum dolor sit amet interdum arcu pulvinar lorem ipsum sed feugiat
-  etiam sed magna adipiscing.
+  Ofrecemos estrategias de transformación digital armonizando procesos y
+  personas. Asesoramos en los procesos de reinvención de las organizaciones
+  implantando las tecnologías adecuadas en cada caso. Apoyamos a nuestros
+  clientes en el uso de tecnologías de gestión para la captura, almacenamiento y
+  proceso de datos.
 show_in_home_posts: true
 show_in_sidebar: false
 sidebar:
@@ -17,7 +20,7 @@ sidebar:
   side: left
 subtitle: Sed magna in pharetra ultricies dolor sit amet consequat adipiscing lorem.
 template: page
-title: Ultricies sed lorem
+title: Transformación  Digital
 ---
 
 ### Dolore Amet Consequat

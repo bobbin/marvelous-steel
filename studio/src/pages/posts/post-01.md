@@ -15,7 +15,7 @@ show_in_home_posts: false
 show_in_sidebar: true
 sidebar:
   enabled: false
-  side: right
+  side: left
 subtitle: Sed magna in pharetra ultricies dolor sit amet consequat adipiscing lorem.
 template: page
 title: Amet Lorem Tempus
