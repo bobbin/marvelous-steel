@@ -9,13 +9,13 @@ export default class Service extends React.Component {
         <img src={this.props.image}></img>
         </div>
         <div className="content">
-            
+
             <h3>{this.props.h3}</h3>
             <p>
             {this.props.p}            
             </p>
     </div>
-</section>
+    </section>
 
         );
     }

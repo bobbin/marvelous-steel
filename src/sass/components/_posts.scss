@@ -9,21 +9,21 @@
 .posts {
 	display: flex;
 	flex-direction: column;
-	padding: 89px 200px;
+	padding: 89px 0px;
 	// @include vendor('display', 'flex');
 	// @include vendor('flex-wrap', 'wrap');
 	// margin: 0 0 _size(element-margin) 0;
 
 
-	> :nth-child(3),
-	:nth-child(5),
-	:nth-child(6) {
-		flex-direction: row-reverse;
-	}
+
 
 
 	.post {
 		@include vendor('display', 'flex');
+		padding: 0px 200px;
+		margin-bottom: 64px;
+
+
 
 		.image {
 			display: block;
@@ -44,6 +44,7 @@
 			width: 60%;
 			// -ms-flex: auto;
 
+
 			> :last-child {
 				margin-bottom: 0;
 			}
@@ -57,23 +58,41 @@
 				letter-spacing: normal;
 				color: #000000;
 				text-transform: inherit;
+
+				&::before {
+					position: absolute;
+					content: "";
+					display: inline-block;
+					height: 0.5em;
+					vertical-align: bottom;
+					width: 73px;
+					margin-left: -22px;
+					height: 10px;
+					border-radius: 12.5px;
+					border-top: 10px solid #f04985;
+					margin-top: 62px;
+				}
+			}
+
+			p {
+				margin-top: 57px;
 			}
 		}
 	}
 
-	>* {
-		margin: 0 0 (_size(element-margin) * 2) 0;
-		// padding: 0 (_size(element-margin) * 0.75);
-		width: 100%;
-	}
+	// >* {
+	// 	margin: 0 0 (_size(element-margin) * 2) 0;
+	// 	// padding: 0 (_size(element-margin) * 0.75);
+	// 	width: 100%;
+	// }
 
-	> :nth-child(2n) {
-		padding-right: 0;
-	}
+	// > :nth-child(2n) {
+	// 	padding-right: 0;
+	// }
 
-	> :nth-child(2n + 1) {
-		padding-left: 0;
-	}
+	// > :nth-child(2n + 1) {
+	// 	padding-left: 0;
+	// }
 
 	// > :nth-last-child(1), > :nth-last-child(2) {
 	// 	margin-bottom: 0;
@@ -121,4 +140,66 @@
 			}
 		}
 	}
+}
+
+.background-service {
+	background-image: url(../../images/background-service.jpg);
+	color: black;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: inherit;
+	background-repeat: no-repeat;
+	min-height: 105vh;
+	height: 97em;
+	background-position: top;
+	padding-top: 230px;
+	padding-bottom: 230px;
+}
+
+.reverse {
+	flex-direction: row-reverse;
+}
+
+.posts .background-service .post:nth-child(1) {
+	flex-direction: row-reverse;
+
+	.content {
+		margin-right: 53px;
+	}
+}
+
+.posts .post:nth-child(5) {
+	flex-direction: row-reverse;
+
+	.content {
+		margin-right: 53px;
+	}
+}
+
+.posts .post:nth-child(4) {
+	flex-direction: row-reverse;
+
+	.content {
+		margin-right: 53px;
+	}
+}
+
+.posts .background-service .post {
+	.content{
+		width: 50%;
+		padding: 64px;
+		background-color: rgba($color: #6fc3ef, $alpha: 0.5);
+		clip-path:polygon(0 0,100% 50px, 100% 81%,0 100%);
+	}
+	img {
+		display: none;
+	}
+
+	h3 {
+		color: white;
+	}
+}
+
+.posts .post:nth-child(4) .content h3::before {
+	margin-top: 106px;
 }
