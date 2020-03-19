@@ -2,6 +2,7 @@ import React from 'react';
 import _ from 'lodash';
 import Services from '../components/Services/Services';
 import Contact from '../components/Contact/Contact'
+import Technologies from '../components/Technologies/Technologies'
 import components, {Layout} from '../components/index';
 import Banner from '../components/Banner';
 
@@ -17,6 +18,7 @@ export default class Home extends React.Component {
                         )
                     })}
                     <Services></Services>
+                    <Technologies></Technologies>
                     <Contact></Contact>
             </Layout>
         );

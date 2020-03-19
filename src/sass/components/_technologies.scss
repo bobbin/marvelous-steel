@@ -1,0 +1,22 @@
+.technologies{
+    width: 100%;
+    background-color: #7a0e7d;
+    height: auto;
+    padding: 103px 200px;
+    p{
+        margin: auto;
+        font-size: 28px;
+        font-weight: 300;
+        text-align: center;
+        color: #d8d8d8;
+        margin-bottom: 87px;
+    }
+    .logos{
+        display: flex;
+        justify-content: space-between;
+        img{
+            height: 60px;
+            width: auto;
+        }
+    }
+}

@@ -9,7 +9,7 @@ export default class Footer extends React.Component {
         let item_len = _.size(item_list);
         return (
             <footer id="footer">
-                <div className="content">
+                {/* <div className="content">
                     <div className="inner">
                         {_.get(this.props, 'pageContext.site.data.footer.about.enabled') && 
                             <section className="about">
@@ -61,7 +61,7 @@ export default class Footer extends React.Component {
                             }
                         </React.Fragment>}
                     </div>
-                </div>
+                </div> */}
                 <p className="copyright">{_.get(this.props, 'pageContext.site.data.footer.copyright.enabled') && <React.Fragment>{htmlToReact(_.get(this.props, 'pageContext.site.data.footer.copyright.text'))}<br /></React.Fragment>}
                     {
                     _.map(_.get(this.props, 'pageContext.menus.footer'), (item, item_idx) => (<React.Fragment key={item_idx}>
