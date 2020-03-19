@@ -42,6 +42,7 @@
 
 		.content {
 			width: 60%;
+
 			// -ms-flex: auto;
 
 
@@ -97,7 +98,11 @@
 	// > :nth-last-child(1), > :nth-last-child(2) {
 	// 	margin-bottom: 0;
 	// }
-
+	@include breakpoint('<=large') {
+	.post{
+		padding: 0px 122px;
+	}
+	}
 	@include breakpoint('<=medium') {
 		.post {
 			.image {
@@ -122,6 +127,8 @@
 
 	@include breakpoint('<=small') {
 		.post {
+			display: inline-block;
+			padding: 0px 30px;
 			.image {
 				width: 30%;
 				min-width: 6em;
@@ -129,6 +136,9 @@
 
 			.content {
 				width: 70%;
+			}
+			.background-service .post .content {
+				width: 100%;
 			}
 		}
 	}
@@ -187,9 +197,9 @@
 .posts .background-service .post {
 	.content{
 		width: 50%;
-		padding: 64px;
+		padding: 87px;
 		background-color: rgba($color: #6fc3ef, $alpha: 0.5);
-		clip-path:polygon(0 0,100% 50px, 100% 81%,0 100%);
+		clip-path:polygon(0 0,100% 50px, 100% 86%,0 100%);
 	}
 	img {
 		display: none;
@@ -198,8 +208,18 @@
 	h3 {
 		color: white;
 	}
+
+	content:nth-child(2){
+	margin-top: 150px;
+	}
 }
 
-.posts .post:nth-child(4) .content h3::before {
+.posts .post:nth-child(4) .content h3::before{
 	margin-top: 106px;
 }
+.posts .background-service .post:nth-child(2) .content h3::before {
+	margin-top: 106px;
+}
+
+
+
