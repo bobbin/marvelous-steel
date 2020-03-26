@@ -39,7 +39,7 @@
 					width: 350px;
 					height: auto;
 				}
-				
+
 				@include breakpoint('<=xsmall') {
 					width: 250px;
 				}
@@ -65,11 +65,26 @@
 				letter-spacing: normal;
 				color: #000000;
 				text-transform: inherit;
+				margin-bottom: 24px;
+				margin-top: 20px;
 
-				&::before {
-					position: absolute;
+
+				// &::before {
+				// 	position: absolute;
+				// 	content: "";
+				// 	display: inline-block;
+				// 	height: 0.5em;
+				// 	vertical-align: bottom;
+				// 	width: 73px;
+				// 	margin-left: -22px;
+				// 	height: 10px;
+				// 	border-radius: 12.5px;
+				// 	border-top: 10px solid #f04985;
+				// 	margin-top: 62px;
+				// }
+				&::after {
 					content: "";
-					display: inline-block;
+					display: block;
 					height: 0.5em;
 					vertical-align: bottom;
 					width: 73px;
@@ -77,12 +92,12 @@
 					height: 10px;
 					border-radius: 12.5px;
 					border-top: 10px solid #f04985;
-					margin-top: 62px;
+					margin-top: 25px;
 				}
 			}
 
 			p {
-				margin-top: 57px;
+				margin-top: 22px;
 			}
 		}
 
@@ -96,23 +111,7 @@
 
 	}
 
-	// >* {
-	// 	margin: 0 0 (_size(element-margin) * 2) 0;
-	// 	// padding: 0 (_size(element-margin) * 0.75);
-	// 	width: 100%;
-	// }
 
-	// > :nth-child(2n) {
-	// 	padding-right: 0;
-	// }
-
-	// > :nth-child(2n + 1) {
-	// 	padding-left: 0;
-	// }
-
-	// > :nth-last-child(1), > :nth-last-child(2) {
-	// 	margin-bottom: 0;
-	// }
 	@include breakpoint('<=large') {
 		.post {
 			padding: 0px 122px;
@@ -224,10 +223,12 @@
 
 		.child:nth-child(2) .post .content h3::before {
 			margin-top: 106px;
+
 			@include breakpoint('<=xsmall') {
 				margin-top: 149px;
 			}
 		}
+
 		@include breakpoint('<=xsmall') {
 			height: 100%;
 		}
@@ -258,9 +259,10 @@
 
 	.child:nth-child(2) .post .content h3::before {
 		margin-top: 106px;
+
 		@include breakpoint('<=xsmall') {
 			margin-top: 191px;
-		}	
+		}
 	}
 
 	.child:nth-child(5) .post .content h3::before {
@@ -269,14 +271,15 @@
 
 
 	@include breakpoint('<=xsmall') {
-		.child .post .content h3::before{
+		.child .post .content h3::before {
 			margin-left: -6px;
-	}
+		}
+
 		.child:nth-child(1) .post .content h3::before {
 			margin-top: 109px;
 
 		}
-	}	
+	}
 
 
 
