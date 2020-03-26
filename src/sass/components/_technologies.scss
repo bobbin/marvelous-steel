@@ -15,8 +15,31 @@
         display: flex;
         justify-content: space-between;
         img{
-            height: 60px;
+            height: 112px;
             width: auto;
+            @include breakpoint('<=small') {
+                height: 82px;
+            }
+            @include breakpoint('<=xsmall') {
+                height: 70px;
+            }
+        }
+
+        @include breakpoint('<=small') {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-column-gap: 53px;
+            grid-row-gap: 51px;
+        }
+        @include breakpoint('<=xsmall') {
+            grid-column-gap: 0px;
         }
     }
+    @include breakpoint('<=small') {
+        padding: 40px 100px;
+    }
+    @include breakpoint('<=xsmall') {
+        padding: 40px 50px;
+    }
+   
 }

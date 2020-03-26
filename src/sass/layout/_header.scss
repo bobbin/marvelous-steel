@@ -27,7 +27,7 @@
 		position: fixed;
 		top: 0;
 		width: 100%;
-		z-index: _misc(z-index-base);
+		z-index: 999;
 
 		a {
 			color: rgba(0, 0, 0, 0.85);

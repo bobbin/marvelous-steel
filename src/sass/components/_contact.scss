@@ -1,31 +1,48 @@
-.contact{
+.contact {
     width: 100%;
     height: auto;
     padding: 63px 200px;
     display: flex;
-    .map{
+
+    .map {
         width: 452px;
         height: 320px;
         box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.25);
+        @include breakpoint('<=small') {
+            width: 100%;
+            height: 320px;
+        }
     }
-    .direction{
+
+    .direction {
         display: flex;
         flex-direction: column;
         width: 100%;
         margin-left: 46px;
-        .dates{
+
+        .dates {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            .date{
+
+            @include breakpoint('<=small') {
+                flex-direction: column;
+                margin: auto;
+                margin-top: 60px;
+                margin-bottom: 60px;
+            }
+
+            .date {
                 display: flex;
                 flex-direction: row;
                 width: 30%;
-                img{
-                   height: 36px;
-                   width: auto;
+
+                img {
+                    height: 36px;
+                    width: auto;
                 }
-                p{
+
+                p {
                     font-size: 19px;
                     font-weight: normal;
                     font-stretch: normal;
@@ -35,10 +52,14 @@
                     color: #1d1d26;
                     margin-left: 27px;
                 }
+
+                @include breakpoint('<=small') {
+                    width: 100%;
+                }
             }
         }
 
-        form{
+        form {
             grid-template-columns: 50% 50%;
             display: grid;
             grid-template-rows: auto;
@@ -53,29 +74,32 @@
             .item1 {
                 grid-area: name;
             }
-    
+
             .item2 {
                 grid-area: email;
             }
-    
+
             .item3 {
                 grid-area: tlf;
             }
-    
+
             .item4 {
                 grid-area: mens;
             }
-    
+
             .item5 {
                 grid-area: env;
             }
+
             .item6 {
                 grid-area: check;
             }
-            .button{
+
+            .button {
                 padding: 0px;
                 background-color: #6bb4df;
-                button{
+
+                button {
                     width: 100%;
                     border: none;
                     color: white !important;
@@ -83,6 +107,32 @@
                 }
             }
 
+
+
+            @include breakpoint('<=small') {
+                grid-template-columns: 100%;
+                display: grid;
+                grid-template-areas:
+                    "name"
+                    "mens"
+                    "email"
+                    "tlf"
+                    "env"
+                    "check";
+            }
+
+
+
         }
+        @include breakpoint('<=small') {
+margin-left: 0px;
+        }
+    }
+
+
+    @include breakpoint('<=small') {
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 63px 10%;
     }
 }

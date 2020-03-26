@@ -24,7 +24,7 @@
 
 	.content {
 		position: absolute;
-		bottom: 0;
+		top: 20%;
 		left: 0;
 		@include color-typography(accent4);
 		@include color-button(accent4);
@@ -32,6 +32,12 @@
 		@include padding(6.5em, 0);
 		width: 50%;
 		background-color: transparent;
+		@include breakpoint('<=small') {
+			width: 90%;
+		}
+		// @include breakpoint('<=xsmall') {
+		// 	top: 15%;
+		// }
 		
 
 		>.inner {
@@ -53,6 +59,9 @@
 					font-style: normal;
 					line-height: 1.01;
 					letter-spacing: normal;
+					@include breakpoint('<=small') {
+						font-size: 31px;
+					}
 				}
 			}
 

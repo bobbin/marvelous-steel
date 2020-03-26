@@ -1,9 +1,5 @@
 about:
-  actions:
-    - is_primary: false
-      is_scrolly: false
-      label: Contact
-      url: /contact
+  actions: []
   enabled: true
   text: >-
     Lorem ipsum dolor sit amet interdum mollis sapien. Sed amet ac lorem ipsum

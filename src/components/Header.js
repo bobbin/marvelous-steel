@@ -13,6 +13,7 @@ export default class Header extends React.Component {
                 <nav id="nav">
                     <Menu {...this.props} menu={menu} page={this.props.pageContext} />
                 </nav>
+               
                 <Link to="#navPanel" className="navPanelToggle" />
             </header>
         );

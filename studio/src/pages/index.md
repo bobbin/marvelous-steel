@@ -3,18 +3,16 @@ banner:
   actions:
     - is_huge: true
       is_primary: false
-      is_scrolly: false
+      is_scrolly: true
       label: Conoce nuestras soluciones
-      url: /no-sidebar
+      url: '#service'
   title: Donde surge  una necesidad Apptiva proporciona soluciones
 menus:
   layouts: {}
   main:
-    title: Home
     weight: 1
-  submenu:
-    title: Digital Transformation
+  submenu: {}
 sections: []
 template: home
-title: Apptiva Technologies
+title: Apptiva Technologie
 ---

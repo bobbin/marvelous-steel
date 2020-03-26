@@ -7,38 +7,50 @@
             "weight": 4
         }
     ],
-    "layouts": [],
-    "main": [
+    "layouts": [
         {
-            "identifier": "#",
-            "title": "Servicios",
-            "url": "#"
-        }
-    ],
-    "submenu": [
-        {
-            "identifier": "normal",
-            "title": "Option One",
-            "url": "#",
+            "identifier": "Transformación",
+            "title": "Transformación digital",
+            "url": "#transformacion",
             "weight": 1
         },
         {
-            "identifier": "normal5",
-            "title": "Option Two",
-            "url": "#",
+            "identifier": "software",
+            "title": "Soluciones Software",
+            "url": "#desarrollo",
             "weight": 2
         },
         {
-            "identifier": "normal6",
-            "title": "Option Three",
-            "url": "#",
+            "identifier": "cloud",
+            "title": "Servicios Cloud",
+            "url": "#cloud",
             "weight": 3
         },
         {
-            "identifier": "normal7",
-            "title": "Option Four",
-            "url": "#",
+            "identifier": "iot",
+            "title": "Servicios IoT",
+            "url": "#iot",
             "weight": 4
+        },
+        {
+            "identifier": "learning",
+            "title": "Machine Learning",
+            "url": "#learning",
+            "weight": 5
+        },
+        {
+            "identifier": "formacion",
+            "title": "Formación",
+            "url": "#formacion",
+            "weight": 6
         }
-    ]
+    ],
+    "main": [
+        {
+            "identifier": "layouts",
+            "title": "Servicios",
+            "url": "#service"
+        }
+    ],
+    "submenu": []
 }

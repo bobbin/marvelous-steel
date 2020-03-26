@@ -56,6 +56,8 @@
 			line-height: 4.1em;
 			padding: 0 3.5em;
 
+			
+
 			@include breakpoint('<=medium') {
 				font-size: 0.9em;
 				height: 3.5em;
