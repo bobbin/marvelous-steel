@@ -7,11 +7,13 @@ import Menu from './Menu';
 export default class Header extends React.Component {
     render() {
         let menu = _.get(this.props, 'pageContext.menus.main');
+        let menu2 = [...menu];
+        menu2.pop();
         return (
             <header id="header" className={classNames({'alt': _.get(this.props, 'pageContext.frontmatter.template') === _.get(this.props, 'pageContext.site.siteMetadata.landing_template')})}>
                 <h1 id="logo"><Link to={_.get(this.props, 'pageContext.site.pathPrefix') || '/'}><img width="300" src="/images/logo-color-pequeño.png"/></Link></h1>
                 <nav id="nav">
-                    <Menu {...this.props} menu={menu} page={this.props.pageContext} />
+                    <Menu {...this.props} menu={menu2} page={this.props.pageContext} />
                 </nav>
                
                 <Link to="#navPanel" className="navPanelToggle" />
