@@ -50,6 +50,12 @@
             "identifier": "layouts",
             "title": "Servicios",
             "url": "#service"
+        },
+        {
+            "identifier": "contacto",
+            "title": "Contacto",
+            "url": "#contact",
+            "weight": 3
         }
     ],
     "submenu": []
