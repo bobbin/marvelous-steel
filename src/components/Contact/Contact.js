@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class Contact extends React.Component {
     render() {
         return (
-<section className="contact" name="contact">
+<section className="contact" name="formulario">
     <div className="map">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1960.0566978176237!2d-3.7470691869240786!3d40.3689838844398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4189d5065ddd7d%3A0xcc686f0544033be6!2sCalle%20del%20Cidro%2C%203%2C%2028044%20Madrid!5e0!3m2!1ses!2ses!4v1584613218107!5m2!1ses!2ses" width="100%" height="100%"></iframe>
     </div>

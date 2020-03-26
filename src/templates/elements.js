@@ -10,7 +10,7 @@ export default class Elements extends React.Component {
     render() {
         return (
             <Layout {...this.props}>
-                <section id="main" className="wrapper">
+                {/* <section id="main" className="wrapper">
                     <div className="inner">
                         <header className="major">
                             <h2>{_.get(this.props, 'pageContext.frontmatter.title')}</h2>
@@ -18,7 +18,7 @@ export default class Elements extends React.Component {
                         </header>
                         <section>
                             <h4>Form</h4>
-                            <form name="contact" netlify-honeypot="bot-field" data-netlify="true" netlify method="post" action="thank-you">
+                            <form netlify-honeypot="bot-field" data-netlify="true" netlify method="post" action="thank-you">
                                 <div className="row gtr-uniform gtr-50">
                                     <div className="col-6 col-12-xsmall">
                                         <input type="text" name="name" id="demo-name"  placeholder="Name" />
@@ -69,7 +69,7 @@ export default class Elements extends React.Component {
                             </form>
                         </section>
                     </div>
-                </section>
+                </section> */}
             </Layout>
         );
     }
