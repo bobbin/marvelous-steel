@@ -10,7 +10,6 @@ import footer from './footer.js';
 import home from './home.js';
 import page from './page.js';
 import post from './post.js';
-import elements from './elements.js';
 import action from './action.js';
 import action_huge from './action_huge.js';
 import contact_with_link from './contact_with_link.js';
@@ -38,7 +37,6 @@ export default createSchema({
     home,
     page,
     post,
-    elements,
     action,
     action_huge,
     contact_with_link,
