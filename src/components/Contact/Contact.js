@@ -10,15 +10,15 @@ export default class Contact extends React.Component {
     <div className="direction">
             <div className="dates">
                 <div className="date">
-                    <img src="images/map.png"></img>
+                    <img src="images/map.svg"></img>
                     <p>C/ Cidro nº 3, 3º 2 28044 Madrid</p>
                 </div>
                 <div className="date">
-                    <img src="images/tlf.png"></img>
+                    <img src="images/tlf.svg"></img>
                     <p>91 000 000</p>
                 </div>
                 <div className="date">
-                    <img src="images/mail.png"></img>
+                    <img src="images/mail.svg"></img>
                     <p>info@apptiva.es</p>
                 </div>
             </div>
