@@ -10,27 +10,19 @@
 	display: flex;
 	flex-direction: column;
 	padding: 0px 0px 89px 0px;
-	// @include vendor('display', 'flex');
-	// @include vendor('flex-wrap', 'wrap');
-	// margin: 0 0 _size(element-margin) 0;
-
 
 	.post {
 		@include vendor('display', 'flex');
 		padding: 0px 200px;
 		padding-top: 95px;
 
-
-
 		.image {
 			display: block;
 			margin-right: _size(element-margin);
 			width: 40%;
-			// -ms-flex: auto;
 
 			img {
-				// display: block;
-				// width: 100%;
+
 				width: 428px;
 				height: 285px;
 				object-fit: contain;
@@ -49,9 +41,6 @@
 		.content {
 			width: 60%;
 
-			// -ms-flex: auto;
-
-
 			> :last-child {
 				margin-bottom: 0;
 			}
@@ -68,20 +57,6 @@
 				margin-bottom: 24px;
 				margin-top: 20px;
 
-
-				// &::before {
-				// 	position: absolute;
-				// 	content: "";
-				// 	display: inline-block;
-				// 	height: 0.5em;
-				// 	vertical-align: bottom;
-				// 	width: 73px;
-				// 	margin-left: -22px;
-				// 	height: 10px;
-				// 	border-radius: 12.5px;
-				// 	border-top: 10px solid #f04985;
-				// 	margin-top: 62px;
-				// }
 				&::after {
 					content: "";
 					display: block;
@@ -93,6 +68,7 @@
 					border-radius: 12.5px;
 					border-top: 10px solid #f04985;
 					margin-top: 25px;
+
 					@include breakpoint('<=xsmall') {
 						margin-left: -9px;
 
@@ -105,31 +81,55 @@
 			}
 		}
 
-
-
-
-
-
-
-
-
 	}
 
 
+	.child:nth-child(4) .post, .child:nth-child(5) .post {
+		flex-direction: row-reverse;
+
+		.content {
+			margin-right: 53px;
+		}
+		@include breakpoint('<=medium') {
+			flex-direction: column;
+
+			.image {
+				width: 100%;
+			}
+			.content {
+				width: 100%;
+			}
+	}
+	}
+
 	@include breakpoint('<=large') {
 		.post {
-			padding: 0px 122px;
+			padding: 24px 60px;
+
+			.image {
+				width: 50%;
+			}
+
+			.content {
+				width: 50%;
+
+				h3:after {
+					margin-left: -8px;
+				}
+			}
 		}
 	}
 
 	@include breakpoint('<=medium') {
 		.post {
+			flex-direction: column;
+
 			.image {
-				width: 30%;
+				width: 100%;
 			}
 
 			.content {
-				width: 70%;
+				width: 100%;
 			}
 		}
 
@@ -169,13 +169,6 @@
 		}
 	}
 
-
-
-
-
-
-
-
 	.background-service {
 		background-image: url(../../images/background-service.jpg);
 		color: black;
@@ -206,11 +199,15 @@
 				background-color: rgba($color: #6fc3ef, $alpha: 0.5);
 				clip-path: polygon(0 0, 100% 50px, 100% 86%, 0 100%);
 
-				@include breakpoint('<=small') {
+				@include breakpoint('<=large') {
 					width: 100%;
 					padding: 87px 30px;
 				}
 
+				@include breakpoint('<=small') {
+					width: 100%;
+					padding: 87px 48px;
+				}
 			}
 
 			img {
@@ -224,15 +221,20 @@
 			content:nth-child(2) {
 				margin-top: 150px;
 			}
+
+
+			@include breakpoint('<=medium') {
+				flex-direction: column;
+				.image {
+					display: none;
+				}
+				.content {
+					width: 100%;
+				}
+			}
 		}
 
-		// .child:nth-child(2) .post .content h3::before {
-		// 	margin-top: 106px;
 
-		// 	@include breakpoint('<=xsmall') {
-		// 		margin-top: 149px;
-		// 	}
-		// }
 
 		@include breakpoint('<=xsmall') {
 			height: 100%;
@@ -242,57 +244,7 @@
 	}
 
 
-
-
-	.child:nth-child(5) .post {
-		flex-direction: row-reverse;
-
-		.content {
-			margin-right: 53px;
-		}
-	}
-
-	.child:nth-child(4) .post {
-		flex-direction: row-reverse;
-
-		.content {
-			margin-right: 53px;
-		}
-	}
-
-	// .child:nth-child(4) .post .content h3::before {
-	// 	margin-top: 106px;
-	// }
-
-	// .child:nth-child(2) .post .content h3::before {
-	// 	margin-top: 106px;
-
-	// 	@include breakpoint('<=xsmall') {
-	// 		margin-top: 191px;
-	// 	}
-	// }
-
-	// .child:nth-child(5) .post .content h3::before {
-	// 	margin-top: 106px;
-	// }
-
-
-	// @include breakpoint('<=xsmall') {
-	// 	.child .post .content h3::before {
-	// 		margin-left: -6px;
-	// 	}
-
-	// 	.child:nth-child(1) .post .content h3::before {
-	// 		margin-top: 109px;
-
-	// 	}
-	// }
-
-
-
 }
-
-
 
 .reverse {
 	flex-direction: row-reverse;

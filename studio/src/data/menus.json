@@ -55,7 +55,7 @@
         {
             "identifier": "contacto",
             "title": "Contacto",
-            "url": "#service",
+            "url": "#formulario",
             "weight": 3
         }
     ],

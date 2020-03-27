@@ -17,14 +17,26 @@
         img{
             height: 112px;
             width: auto;
+            @include breakpoint('<=large') {
+                height: 90px;
+            }
             @include breakpoint('<=small') {
                 height: 82px;
             }
             @include breakpoint('<=xsmall') {
                 height: 70px;
             }
+     
         }
 
+ 
+ 
+        @include breakpoint('<=medium') {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-column-gap: 36px;
+            grid-row-gap: 51px;
+        }
         @include breakpoint('<=small') {
             display: grid;
             grid-template-columns: 50% 50%;
@@ -35,11 +47,17 @@
             grid-column-gap: 0px;
         }
     }
+    @include breakpoint('<=large') {
+        padding: 95px 70px;
+    }
     @include breakpoint('<=small') {
         padding: 40px 100px;
     }
     @include breakpoint('<=xsmall') {
         padding: 40px 50px;
     }
+
+
+    
    
 }

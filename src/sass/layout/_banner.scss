@@ -19,9 +19,6 @@
     height: 67em;
     background-position: top;
 
-
-
-
 	.content {
 		position: absolute;
 		top: 20%;
@@ -59,6 +56,12 @@
 					font-style: normal;
 					line-height: 1.01;
 					letter-spacing: normal;
+					@include breakpoint('<=large') {
+						font-size: 63px;
+					}
+					@include breakpoint('<=medium') {
+						font-size: 46px;
+					}
 					@include breakpoint('<=small') {
 						font-size: 31px;
 					}
@@ -94,7 +97,11 @@
 					}
 				}
 			}
+			@include breakpoint('<=large') {
+				display: block;
+			}
 		}
+
 	}
 
 	body.is-mobile & {
@@ -102,10 +109,12 @@
 	}
 
 	@include breakpoint('<=large') {
+		height: 47em;
 		min-height: 0;
 
 		.content {
 			@include padding(4em, 3em);
+			width: 90%;
 
 			>.inner {
 				width: _size(inner-width, large);

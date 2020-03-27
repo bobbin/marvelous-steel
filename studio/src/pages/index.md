@@ -14,5 +14,5 @@ menus:
   submenu: {}
 sections: []
 template: home
-title: Apptiva Technologie
+title: Apptiva Technologies
 ---

@@ -8,7 +8,8 @@
         width: 452px;
         height: 320px;
         box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.25);
-        @include breakpoint('<=small') {
+
+        @include breakpoint('<=medium') {
             width: 100%;
             height: 320px;
         }
@@ -25,7 +26,7 @@
             flex-direction: row;
             justify-content: space-between;
 
-            @include breakpoint('<=small') {
+            @include breakpoint('<=medium') {
                 flex-direction: column;
                 margin: auto;
                 margin-top: 60px;
@@ -40,6 +41,10 @@
                 img {
                     height: 36px;
                     width: auto;
+
+                    @include breakpoint('<=large') {
+                        height: 24px;
+                    }
                 }
 
                 p {
@@ -51,9 +56,13 @@
                     letter-spacing: normal;
                     color: #1d1d26;
                     margin-left: 27px;
+
+                    @include breakpoint('<=large') {
+                        margin-left: 12px;
+                    }
                 }
 
-                @include breakpoint('<=small') {
+                @include breakpoint('<=medium') {
                     width: 100%;
                 }
             }
@@ -107,7 +116,9 @@
                 }
             }
 
-
+            @include breakpoint('<=large') {
+                grid-template-columns: 45% 50%;
+            }
 
             @include breakpoint('<=small') {
                 grid-template-columns: 100%;
@@ -120,12 +131,10 @@
                     "env"
                     "check";
             }
-
-
-
         }
-        @include breakpoint('<=small') {
-margin-left: 0px;
+
+        @include breakpoint('<=medium') {
+            margin-left: 0px;
         }
     }
 
@@ -135,4 +144,13 @@ margin-left: 0px;
         grid-template-columns: 100%;
         padding: 63px 10%;
     }
+
+    @include breakpoint('<=large') {
+        padding: 63px 50px;
+    }
+
+    @include breakpoint('<=medium') {
+        flex-direction: column;
+    }
+
 }
